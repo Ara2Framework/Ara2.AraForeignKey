@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>Ara2.AraForeignKey</id>
+        <version>$version$</version>
+        <title>Ara2.AraForeignKey</title>
+        <authors>rafaelleonel</authors>
+        <owners>rafaelleonel</owners>
+        <licenseUrl>http://www.araframework.com.br/license</licenseUrl>
+        <projectUrl>http://www.araframework.com.br</projectUrl>
+        <requireLicenseAcceptance>true</requireLicenseAcceptance>
+        <description>Componente do AraFramework</description>
+        <copyright>Copyright © 2016 Rafael Leonel Pontani , rafaelleonel@gmail.com</copyright>
+        <language>pt-BR</language>
+        <dependencies>
+            <dependency id="Ara2" version="1.2.6" />
+            <dependency id="Ara2.AraButton" version="1.0.0.2"/>
+            <dependency id="Ara2.AraDiv" version="1.0.0.2"/>
+            <dependency id="Ara2.AraGrid" version="1.0.0.1"/>
+            <dependency id="Ara2.AraLabel" version="1.0.0.1"/>
+            <dependency id="Ara2.AraMenu" version="1.0.0.0"/>
+            <dependency id="Ara2.AraSelect" version="1.0.0.0"/>
+            <dependency id="Ara2.AraTable" version="1.0.0.0"/>
+            <dependency id="Ara2.AraTextBox" version="1.0.0.0"/>
+            <dependency id="Ara2.AraTimer" version="1.0.0.1"/>
+            <dependency id="Ara2.AraWindow" version="1.0.0.3"/>
+            <dependency id="DynamicQuery" version="1.0"/>
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="..\Ara2\Components\AraForeignKeyLinq\CREDITS.md" target="content\Ara2\Components\AraForeignKeyLinq\CREDITS.md" />
+        <file src="..\Ara2\Components\AraForeignKeyLinq\LICENSE.md" target="content\Ara2\Components\AraForeignKeyLinq\LICENSE.md" />
+        <file src="..\bin\Release\Ara2.AraForeignKey.dll" target="lib\net40\Ara2.AraForeignKey.dll" />
+    </files>
+</package>

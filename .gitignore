@@ -1,0 +1,5 @@
+/.vs
+*.suo
+/Ara2.AraForeignKey/Nuget/Ara2.AraForeignKey.*.nupkg
+/Ara2.AraForeignKey/bin
+/Ara2.AraForeignKey/obj
