@@ -44,10 +44,6 @@
       <HintPath>..\packages\Ara2.AraDiv.1.0.0.2\lib\net40\Ara2.AraDiv.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Ara2.AraGrid, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ara2.AraGrid.1.0.0.1\lib\net40\Ara2.AraGrid.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="Ara2.AraLabel, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Ara2.AraLabel.1.0.0.1\lib\net40\Ara2.AraLabel.dll</HintPath>
       <Private>True</Private>
@@ -107,7 +103,12 @@
     <None Include="Nuget\Ara2.AraForeignKey.nuspec" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\Ara2.AraGrid\Ara2.AraGrid\Ara2.AraGrid.csproj">
+      <Project>{fd2f2525-1480-41db-995e-ae31e4a91004}</Project>
+      <Name>Ara2.AraGrid</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="PostBuildMacros">
     <GetAssemblyIdentity AssemblyFiles="$(TargetPath)">
@@ -124,7 +125,7 @@
   </PostBuildEventDependsOn>
     <PostBuildEvent>cd $(ProjectDir)Nuget
 del *.nupkg
-nuget.exe pack $(SolutionName).nuspec -version @(VersionNumber)</PostBuildEvent>
+nuget.exe pack $(ProjectName).nuspec -version @(VersionNumber)</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
